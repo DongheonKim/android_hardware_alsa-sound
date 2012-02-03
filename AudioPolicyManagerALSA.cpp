@@ -389,9 +389,9 @@ uint32_t AudioPolicyManagerALSA::getDeviceForStrategy(routing_strategy strategy,
                  }
            }
 #if defined(HAS_FM_RADIO) || defined(OMAP_ENHANCEMENT)
-            if (device2 == 0) {
+/*            if (device2 == 0) {
                 device2 = mAvailableOutputDevices & AudioSystem::DEVICE_OUT_FM_TRANSMIT;
-            }
+            }*/
 #endif
             if (device2 == 0) {
                 device2 = mAvailableOutputDevices & AudioSystem::DEVICE_OUT_SPEAKER;
